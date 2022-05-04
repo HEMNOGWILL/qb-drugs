@@ -42,13 +42,13 @@ RegisterNetEvent('qb-drugs:server:succesDelivery', function(deliveryData, inTime
         if Player.Functions.GetItemByName('weed_brick') ~= nil and Player.Functions.GetItemByName('weed_brick').amount >=
             deliveryData["amount"] then
             Player.Functions.RemoveItem('weed_brick', deliveryData["amount"])
-            local price = 3000
+            local price = 8000 --3000
             if CurrentCops == 1 then
-                price = 4000
+                price = 12500 --4000
             elseif CurrentCops == 2 then
-                price = 5000
+                price = 20000 --5000
             elseif CurrentCops == 3 then
-                price = 6000
+                price = 25000 --6000
             end
             if curRep < 10 then
                 Player.Functions.AddMoney('cash', (deliveryData["amount"] * price / 100 * 8), "dilvery-drugs")

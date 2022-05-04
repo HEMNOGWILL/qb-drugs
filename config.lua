@@ -1,5 +1,5 @@
 Config = Config or {}
-Config.MinimumDrugSalePolice = 2
+Config.MinimumDrugSalePolice = 1 --2
 
 Config.Products = {
     [1] = {
